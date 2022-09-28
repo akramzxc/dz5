@@ -29,5 +29,11 @@ images.forEach ((item) => {
     <p class="text-title" id = 'iner'>${item.subtitle}</p>
     <p class="title" id = 'iner'>${item.price}</p>
     <p class="lte">${item.line}</p>
+    <button class = 'btn'>Delete</button>
     </div>`
+})
+const btn = document.querySelector('button')
+
+addEventListener('click',function () {
+    row.removeChild(row.firstChild)
 })
